@@ -23,13 +23,15 @@ namespace Employee_Management_System
         private void start_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            loading.Visible = true;
+            label1.Visible = true;
             timer1.Start();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
-            progressBar1.Increment(2);
+            start.Visible = false;
+            progressBar1.Increment(3);
             if (progressBar1.Value == 100)
             {
                 timer1.Stop();
@@ -37,6 +39,17 @@ namespace Employee_Management_System
                 fm2.Show();
                 this.Hide();
             }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -33,7 +33,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.start = new System.Windows.Forms.Button();
             this.wall = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.loading = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -54,13 +55,13 @@
             // 
             // start
             // 
-            this.start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.start.BackColor = System.Drawing.Color.Orange;
             this.start.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.start.FlatAppearance.BorderSize = 0;
             this.start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.start.Font = new System.Drawing.Font("Dubai", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.start.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.start.Location = new System.Drawing.Point(365, 305);
+            this.start.Location = new System.Drawing.Point(31, 309);
             this.start.Margin = new System.Windows.Forms.Padding(6, 16, 6, 16);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(440, 46);
@@ -78,13 +79,29 @@
             this.wall.Size = new System.Drawing.Size(0, 34);
             this.wall.TabIndex = 3;
             // 
-            // panel1
+            // loading
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(33, 33);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 318);
-            this.panel1.TabIndex = 4;
+            this.loading.AutoSize = true;
+            this.loading.Image = global::Employee_Management_System.Properties.Resources.load1;
+            this.loading.Location = new System.Drawing.Point(333, 161);
+            this.loading.Name = "loading";
+            this.loading.Padding = new System.Windows.Forms.Padding(80);
+            this.loading.Size = new System.Drawing.Size(160, 194);
+            this.loading.TabIndex = 5;
+            this.loading.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(725, 332);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 23);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Loading..";
+            this.label1.Visible = false;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
@@ -93,8 +110,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(848, 419);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.loading);
             this.Controls.Add(this.start);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.wall);
             this.Controls.Add(this.progressBar1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -115,6 +133,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button start;
         private System.Windows.Forms.Label wall;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label loading;
+        private System.Windows.Forms.Label label1;
     }
 }
