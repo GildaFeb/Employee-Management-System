@@ -15,7 +15,7 @@ namespace Employee_Management_System
         public Form1()
         {
             InitializeComponent();
-            
+            loading.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         
@@ -48,6 +48,16 @@ namespace Employee_Management_System
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loading_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

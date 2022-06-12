@@ -35,6 +35,7 @@
             this.wall = new System.Windows.Forms.Label();
             this.loading = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -55,16 +56,16 @@
             // 
             // start
             // 
-            this.start.BackColor = System.Drawing.Color.Orange;
+            this.start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
             this.start.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.start.FlatAppearance.BorderSize = 0;
             this.start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.start.Font = new System.Drawing.Font("Dubai", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.start.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.start.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.start.Location = new System.Drawing.Point(31, 309);
+            this.start.Location = new System.Drawing.Point(15, 321);
             this.start.Margin = new System.Windows.Forms.Padding(6, 16, 6, 16);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(440, 46);
+            this.start.Size = new System.Drawing.Size(818, 39);
             this.start.TabIndex = 2;
             this.start.Text = "START";
             this.start.UseVisualStyleBackColor = false;
@@ -82,34 +83,49 @@
             // loading
             // 
             this.loading.AutoSize = true;
-            this.loading.Image = global::Employee_Management_System.Properties.Resources.load1;
-            this.loading.Location = new System.Drawing.Point(333, 161);
+            this.loading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(80)))));
+            this.loading.Image = global::Employee_Management_System.Properties.Resources.load4;
+            this.loading.Location = new System.Drawing.Point(143, 28);
             this.loading.Name = "loading";
-            this.loading.Padding = new System.Windows.Forms.Padding(80);
-            this.loading.Size = new System.Drawing.Size(160, 194);
+            this.loading.Padding = new System.Windows.Forms.Padding(150, 100, 100, 100);
+            this.loading.Size = new System.Drawing.Size(250, 234);
             this.loading.TabIndex = 5;
             this.loading.Visible = false;
+            this.loading.Click += new System.EventHandler(this.loading_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(725, 332);
+            this.label1.Location = new System.Drawing.Point(413, 215);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 23);
+            this.label1.Size = new System.Drawing.Size(200, 47);
             this.label1.TabIndex = 6;
             this.label1.Text = "Loading..";
             this.label1.Visible = false;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(15, 293);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(321, 23);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Employee Management System";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(80)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(848, 419);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.loading);
             this.Controls.Add(this.start);
@@ -135,5 +151,6 @@
         private System.Windows.Forms.Label wall;
         private System.Windows.Forms.Label loading;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
