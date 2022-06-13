@@ -85,7 +85,7 @@
             this.loading.AutoSize = true;
             this.loading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(80)))));
             this.loading.Image = global::Employee_Management_System.Properties.Resources.load8;
-            this.loading.Location = new System.Drawing.Point(209, 37);
+            this.loading.Location = new System.Drawing.Point(215, 76);
             this.loading.Name = "loading";
             this.loading.Padding = new System.Windows.Forms.Padding(200, 110, 200, 100);
             this.loading.Size = new System.Drawing.Size(400, 244);
@@ -98,7 +98,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(692, 326);
+            this.label1.Location = new System.Drawing.Point(12, 326);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 34);
             this.label1.TabIndex = 6;
@@ -111,7 +111,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(15, 293);
+            this.label2.Location = new System.Drawing.Point(77, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(321, 23);
             this.label2.TabIndex = 7;
