@@ -56,7 +56,7 @@
             // 
             // start
             // 
-            this.start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
+            this.start.BackColor = System.Drawing.Color.Teal;
             this.start.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.start.FlatAppearance.BorderSize = 0;
             this.start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -84,11 +84,11 @@
             // 
             this.loading.AutoSize = true;
             this.loading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(80)))));
-            this.loading.Image = global::Employee_Management_System.Properties.Resources.load4;
-            this.loading.Location = new System.Drawing.Point(143, 28);
+            this.loading.Image = global::Employee_Management_System.Properties.Resources.load8;
+            this.loading.Location = new System.Drawing.Point(209, 37);
             this.loading.Name = "loading";
-            this.loading.Padding = new System.Windows.Forms.Padding(150, 100, 100, 100);
-            this.loading.Size = new System.Drawing.Size(250, 234);
+            this.loading.Padding = new System.Windows.Forms.Padding(200, 110, 200, 100);
+            this.loading.Size = new System.Drawing.Size(400, 244);
             this.loading.TabIndex = 5;
             this.loading.Visible = false;
             this.loading.Click += new System.EventHandler(this.loading_Click);
@@ -96,11 +96,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(413, 215);
+            this.label1.Location = new System.Drawing.Point(692, 326);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 47);
+            this.label1.Size = new System.Drawing.Size(141, 34);
             this.label1.TabIndex = 6;
             this.label1.Text = "Loading..";
             this.label1.Visible = false;
@@ -122,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(80)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(107)))), ((int)(((byte)(99)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(848, 419);
             this.Controls.Add(this.label2);
