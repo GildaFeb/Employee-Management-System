@@ -103,6 +103,16 @@ namespace Employee_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap load11 {
+            get {
+                object obj = ResourceManager.GetObject("load11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap load2 {
             get {
                 object obj = ResourceManager.GetObject("load2", resourceCulture);

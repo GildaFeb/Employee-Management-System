@@ -31,6 +31,8 @@ namespace Employee_Management_System
         private void timer1_Tick(object sender, EventArgs e)
         {
             start.Visible = false;
+            percentage.Visible = true;
+            percentage.Text = progressBar1.Value.ToString() + "%";
             progressBar1.Increment(3);
             if (progressBar1.Value == 100)
             {
@@ -42,24 +44,5 @@ namespace Employee_Management_System
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void loading_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
