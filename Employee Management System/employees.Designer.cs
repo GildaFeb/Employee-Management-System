@@ -97,6 +97,7 @@
             this.Controls.Add(this.add);
             this.Controls.Add(this.button1);
             this.Name = "employees";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "employees";
             this.ResumeLayout(false);
 
