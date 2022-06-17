@@ -22,5 +22,12 @@ namespace Employee_Management_System
             add_employee add_Employee = new add_employee();
             add_Employee.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            dashboard dashboard = new dashboard();
+            dashboard.Show();
+            this.Close();
+        }
     }
 }

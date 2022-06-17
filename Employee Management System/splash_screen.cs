@@ -33,7 +33,7 @@ namespace Employee_Management_System
             start.Visible = false;
             percentage.Visible = true;
             percentage.Text = progressBar1.Value.ToString() + "%";
-            progressBar1.Increment(3);
+            progressBar1.Increment(5);
             if (progressBar1.Value == 100)
             {
                 timer1.Stop();

@@ -15,6 +15,14 @@ namespace Employee_Management_System
         public attendance()
         {
             InitializeComponent();
+           
+        }
+
+        private void return__Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            dashboard dashboard = new dashboard();
+            dashboard.Show();
         }
     }
 }

@@ -17,6 +17,7 @@ namespace Employee_Management_System
             InitializeComponent();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             employees employees = new employees();
@@ -36,6 +37,11 @@ namespace Employee_Management_System
             salary_details salary_details = new salary_details();   
             salary_details.Show();
             this.Hide();
+        }
+
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+           
         }
     }
 }

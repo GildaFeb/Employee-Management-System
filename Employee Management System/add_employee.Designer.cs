@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.clear = new System.Windows.Forms.Button();
+            this.close_ = new System.Windows.Forms.Button();
+            this.register = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -54,43 +54,44 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // clear
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(198, 560);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(174, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Clear";
-            this.button1.UseVisualStyleBackColor = true;
+            this.clear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.clear.Location = new System.Drawing.Point(198, 560);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(174, 29);
+            this.clear.TabIndex = 0;
+            this.clear.Text = "Clear";
+            this.clear.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // close_
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Location = new System.Drawing.Point(378, 560);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 29);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Close";
-            this.button2.UseVisualStyleBackColor = true;
+            this.close_.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close_.Location = new System.Drawing.Point(378, 560);
+            this.close_.Name = "close_";
+            this.close_.Size = new System.Drawing.Size(168, 29);
+            this.close_.TabIndex = 1;
+            this.close_.Text = "Close";
+            this.close_.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // register
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Location = new System.Drawing.Point(21, 560);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(171, 29);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = true;
+            this.register.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.register.Location = new System.Drawing.Point(21, 560);
+            this.register.Name = "register";
+            this.register.Size = new System.Drawing.Size(171, 29);
+            this.register.TabIndex = 2;
+            this.register.Text = "Register";
+            this.register.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(40, 24);
+            this.label1.Location = new System.Drawing.Point(40, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(386, 45);
             this.label1.TabIndex = 3;
@@ -284,11 +285,22 @@
             this.label9.TabIndex = 23;
             this.label9.Text = "Contact No.";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(907, 27);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(143, 60);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "LOGO";
+            // 
             // add_employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1127, 601);
+            this.ClientSize = new System.Drawing.Size(1106, 601);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -312,12 +324,13 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.register);
+            this.Controls.Add(this.close_);
+            this.Controls.Add(this.clear);
             this.Name = "add_employee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "add_employee";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,9 +338,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button clear;
+        private System.Windows.Forms.Button close_;
+        private System.Windows.Forms.Button register;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
@@ -351,5 +364,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label12;
     }
 }
